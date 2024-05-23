@@ -109,6 +109,8 @@ export const Card = styled.div`
 export const CardText = styled.div`
     background-color: var(--very-light-gray);
     text-align: center;
+    font-size:16px;
+    color: var(--Dark-Grayish-Blue);
     padding: 1.25rem;
     margin: 0.625rem;
     margin-top: -0.938rem;
@@ -121,8 +123,8 @@ height: auto;
 z-index: 1;
 `
 export const CardName = styled.h2`
-width: 4.375rem; /* Define a largura desejada */
-height: auto; /* Ajusta a altura proporcionalmente */
+width: 4.375rem; 
+height: auto; 
 z-index: 1;
 `
 
