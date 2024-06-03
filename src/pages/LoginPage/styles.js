@@ -28,8 +28,11 @@ export const Content = styled.div`
   border-radius: 20px;
   box-shadow: var(--shadow);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1070px) {
+    width: 90%;
+    height: 50%;
     grid-template-columns: 1fr;
+    align-items: center;
 
   }
   
@@ -45,7 +48,7 @@ export const Content = styled.div`
     align-items: center;
     background: linear-gradient(var(--Dark-Grayish-Blue), var(--secondary-color));
   border-radius: 20px 0px 0px  20px;
-  @media (max-width: 768px) {
+  @media (max-width: 1070px) {
     display: none;
 
   }
@@ -58,7 +61,7 @@ export const Slogan = styled.h2`
   text-align: center;
   overflow: hidden;
   width: 500px;
-  animation: ${fadeIn} 2s ease-in-out;  // Aplica a animação fadeIn com duração de 2 segundos
+  animation: ${fadeIn} 2s ease-in-out;
 `
 
 export const LoginForm = styled.div`
@@ -86,6 +89,7 @@ export const LoginInput =  styled.input`
   height: 40px;
   margin-bottom: 20px;
   padding-left: 10px;
+  color: var(--secondary-color);
   border:1px solid var(--Dark-Grayish-Blue);
   border-radius: 10px;
 
@@ -97,10 +101,6 @@ export const Buttons = styled.div`
  justify-content: space-around;
  width: 80%;
  padding-bottom: 20px;
- @media (max-width: 568px) {
-  flex-direction: column;
-  align-items: center;
-
   
 
 }

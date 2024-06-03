@@ -1,6 +1,6 @@
-import React from 'react';
-import Button from '../../components/button';
-import Logo from '../../components/logo';
+import React from 'react'
+import Button from '../../components/button'
+import Logo from '../../components/logo'
 import {
   Container,
   Content,
@@ -12,7 +12,7 @@ import {
   Buttons,
   Slogan,
   LinkPass,
-} from './styles';
+} from './styles'
 
 export default function LoginPage() {
   return (

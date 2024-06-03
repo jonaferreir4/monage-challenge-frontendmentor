@@ -6,11 +6,12 @@ import YoutubeImg from '../../assets/images/icon-youtube.svg';
 import TwitterImg from '../../assets/images/icon-twitter.svg';
 import PinterestImg from '../../assets/images/icon-pinterest.svg';
 import InstagramImg from '../../assets/images/icon-instagram.svg';
-import { 
-    TagFooter, LogoFooter, 
-    MoreInformations, SocialMedia, SocialMediaImg, 
-    Search, Message, ContentFooter, MessageH1, 
-    TagLi, InputSearch, Paragraph 
+import {
+    TagFooter, LogoFooter,
+    MoreInformations, SocialMedia, SocialMediaImg,
+    Search, SearchAndButton, Message, ButtonWrapper, ContentFooter, MessageH1,
+    TagLi, InputSearch, Paragraph,
+    TagUl
 } from "./styles";
 
 const socialMediaIcons = [
@@ -36,7 +37,9 @@ const Footer = () => {
         <TagFooter>
             <Message>
                 <MessageH1>Simplify how your team works today.</MessageH1>
-                <Button bg="#FFF" color="#000" />
+                <ButtonWrapper>
+                    <Button bg="#FFF" color="#000" />
+                </ButtonWrapper>
             </Message>
             <ContentFooter>
                 <LogoFooter>
@@ -48,24 +51,24 @@ const Footer = () => {
                     </SocialMedia>
                 </LogoFooter>
                 <MoreInformations>
-                    <ul>
+                    <TagUl>
                         {footerLinks.slice(0, 4).map(link => (
                             <TagLi key={link.label}><a href={link.href}>{link.label}</a></TagLi>
                         ))}
-                    </ul>
-                </MoreInformations>
-                <MoreInformations>
-                    <ul>
+                    </TagUl>
+
+                    <TagUl>
                         {footerLinks.slice(4).map(link => (
                             <TagLi key={link.label}><a href={link.href}>{link.label}</a></TagLi>
                         ))}
-                    </ul>
+                    </TagUl>
                 </MoreInformations>
                 <Search>
-                    <div>
+
+                    <SearchAndButton>
                         <InputSearch type="text" placeholder="Updates in your inbox" />
                         <Button text='Go' />
-                    </div>
+                    </SearchAndButton>
                     <Paragraph>Copyright 2020. All Rights Reserved</Paragraph>
                 </Search>
             </ContentFooter>

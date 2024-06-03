@@ -8,14 +8,13 @@ export const StartButton = styled.button`
     padding: 15px 40px;
     max-height: 45px;
     border-radius: 30px;
-
-    @media (max-width: 568px) {
-        padding: 15px 25px;
+    @media (max-width: 330px) {
+        padding: 10px 20px;
         
     }
     &:hover {
         opacity: 0.6;
-
+    }
     
 `
 

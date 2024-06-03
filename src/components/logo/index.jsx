@@ -1,12 +1,12 @@
 import React from "react"
 import LogoIMG from '../../assets/images/logo.svg'
-import { LogoImg } from "./styles"
+import { LogoAside, LogoImg } from "./styles"
 export default function Logo(props) {
     return(
-       <aside>
+       <LogoAside >
             <a href="/">
                 <LogoImg src={LogoIMG} alt="Logo" />
             </a>
-       </aside>
+       </LogoAside>
     )
 }

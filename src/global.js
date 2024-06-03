@@ -1,34 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
-  @font-face {
-    font-family: 'Be Vietnam Pro';
-    src: url('./fonts/BeVietnamPro-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Be Vietnam Pro';
-    src: url('./fonts/BeVietnamPro-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Be Vietnam Pro';
-    src: url('./fonts/BeVietnamPro-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Be Vietnam Pro';
-    src: url('./fonts/BeVietnamPro-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-  }
-
+const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Be Vietnam Pro';
     src: url('./fonts/BeVietnamPro-Regular.ttf') format('truetype');
@@ -43,7 +15,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
     font-size: 16px;
     background-color: hsl(0, 0%, 98%);
     color: hsl(233, 12%, 13%);
@@ -62,4 +34,8 @@ export default createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
+
+  /* Include other styles from index.css here */
 `;
+
+export default GlobalStyles;

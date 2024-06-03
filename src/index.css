@@ -1,37 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 :root {
+  width: 100%;
   --primary-color: hsl(12, 88%, 59%);
   --secondary-color: hsl(228, 39%, 23%);
-  
-  /* neutral */
   --Dark-Grayish-Blue: hsl(227, 12%, 61%);
   --very-dark-blue: hsl(233, 12%, 13%);
   --very-pale-red: hsl(13, 100%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
-
-  /* Font size */
-  --font-size-principal: 16px;
-
-  --padding-primary-page: 70px 175px;
-
+  --font-size-principal: 1rem;
+  --padding-primary-page: 5% 11%;
   --shadow: 
-        0 2px 23px 0 rgba(0, 0, 0, 0.1),
-        0 2px 49px 0 rgba(0, 0, 0, 0.06);
-
-
+    0 2px 23px 0 rgba(0, 0, 0, 0.1),
+    0 2px 49px 0 rgba(0, 0, 0, 0.06);
 }
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Be Vietnam Pro',sans-serif;
+  background-color: #FFF;
+  color: var(--very-dark-blue);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
